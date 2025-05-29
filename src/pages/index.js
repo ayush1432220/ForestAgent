@@ -48,7 +48,7 @@ export default function HomePage() {
     formData.append('after_image_file', afterImage);
 
     try {
-      const response = await axios.post(`${process.env.NEXT_API_URL}/api/analyze-forest`, formData, {
+      const response = await axios.post(`${process.env.NEXT_PUBLIC_API_UR}/api/analyze-forest`, formData, {
         headers: {
           'Content-Type': 'multipart/form-data',
         },

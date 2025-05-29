@@ -10,6 +10,7 @@ app = FastAPI()
 
 origins = [
     "https://forest-agent.vercel.app/",
+    # "http://localhost:3000"
 ]
 
 app.add_middleware(
